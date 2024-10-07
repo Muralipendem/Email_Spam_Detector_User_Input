@@ -1,0 +1,11 @@
+import pickle
+
+# Load the model
+with open('Email_spam_user/model.pkl', 'rb') as model_file:
+    model = pickle.load(model_file)
+
+# Load the TF-IDF vectorizer
+with open('Email_spam_user/tfidf.pkl', 'rb') as tfidf_file:
+    tfidf = pickle.load(tfidf_file)
+
+print("Model and TF-IDF vectorizer loaded successfully.")
